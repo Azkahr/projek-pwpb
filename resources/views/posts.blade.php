@@ -31,6 +31,26 @@
                         @endforeach
                     </tbody>
                 </table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>NIP</th>
+                            <th>NUPTK</th>
+                            <th>Lahir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($teachers as $teacher)
+                            <tr>
+                                <td>{{ $teacher->nama }}</td>
+                                <td>{{ $teacher->nip }}</td>
+                                <td>{{ $teacher->nuptk }}</td>
+                                <td>{{ $teacher->lahir }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
 
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Post;
+use App\Models\Teacher;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,8 @@ Route::get('/', function () {
 
 Route::get('/posts', function() {
     return view('posts', [
-        "posts" => Post::all()
+        "posts" => Post::all(),
+        "teachers" => Teacher::all()
     ]);
 });
 
