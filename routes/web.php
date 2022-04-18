@@ -1,5 +1,8 @@
 <?php
 
+use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Models\Post;
+use App\Models\Teacher;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +18,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::get('/posts', function() {
+    return view('posts', [
+        "posts" => Post::all(),
+        "teachers" => Teacher::all()
+    ]);
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
