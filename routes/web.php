@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeritaController;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Post;
 use App\Models\Teacher;
@@ -17,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        "title" => "Home",
+    ]);
 });
 
 Route::get('/posts', function() {
@@ -26,6 +29,9 @@ Route::get('/posts', function() {
         "teachers" => Teacher::all()
     ]);
 });
+
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('detail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
