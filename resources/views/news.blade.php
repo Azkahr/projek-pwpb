@@ -26,7 +26,7 @@
         <div class="main">
             @foreach ($posts as $post)
                 <img src="{{ Voyager::image($post->image) }}" alt="">
-                <p>{{ $post->category->name }} | {{ date('Y-m-d'), strtotime($post->created_at) }}</p>
+                <p class="mt-3 text-muted" style="margin: 0">{{ $post->category->name }} | {{ date('Y-m-d'), strtotime($post->created_at) }}</p>
                 <h1>{{ $post->title }}</h1>
                 <p>{{ $post->excerpt }}</p>
                 <a href="{{ route('detail', $post->id) }}" class="btn" style="margin-bottom: 20px;">Read more</a>
