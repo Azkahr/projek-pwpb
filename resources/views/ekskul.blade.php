@@ -7,7 +7,8 @@
 @section('layout-container')
     <div class="containerE">
         <div class="header">
-            <h3 style="color: #0B5E91">Ekstrakurikuler</h3>
+            <h1 style="color: #0B5E91">Ekstrakurikuler</h1>
+            <div class="garis"></div>
         </div>
         <div class="ekskul">
             @foreach ($ekskuls as $ekskul)

@@ -6,6 +6,14 @@
     text-align: center;
 }
 
+.garis {
+    width: 50px;
+    margin: auto;
+    height: 3px;
+    background: #0B5E91;
+    border-radius: 1px;
+}
+
 .ekskul {
     display: grid;
     margin-top: 50px;
