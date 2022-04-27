@@ -36,3 +36,7 @@
     height: 100px;
     margin-left: 20px;
 }
+
+.ekskul-1:nth-child(odd) {
+    background: #25abff;
+}
