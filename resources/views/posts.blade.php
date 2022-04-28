@@ -51,6 +51,24 @@
                         @endforeach
                     </tbody>
                 </table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($ekskuls as $ekskul)
+                            <tr>
+                                <td>{{ $ekskul->nama }}</td>
+                                <td>
+                                    <img src="{{ Voyager::image($ekskul->image) }}">
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
