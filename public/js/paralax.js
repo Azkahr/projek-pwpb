@@ -1,0 +1,7 @@
+let bg = document.getElementById("paralax");
+window.onscroll = function (e) {
+    if (window.pageYOffset < 968) {
+        let i = window.pageYOffset / 2 + 5;
+        bg.style.top = `${i}px`;
+    }
+};
