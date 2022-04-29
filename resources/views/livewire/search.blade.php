@@ -30,7 +30,9 @@
                     @endforeach
                 @else
                     <tr>
-                        <h3 style="text-align: center">Tidak ada hasil</h3>
+                        <td>
+                            <h3 style="text-align: center">Tidak ada hasil</h3>
+                        </td>
                     </tr>
                 @endif
             </tbody>
