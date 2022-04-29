@@ -1,28 +1,11 @@
 @extends('layouts.main')
-@push('scriptTop')
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-@endpush
 @push('cssTop')
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/guru.css') }}">
     @livewireStyles
 @endpush
 @include('partials/navbar')
 @section('layout-container')
-<style>
-    .containerG {
-        margin-top: 150px;
-    }
-
-    .body {
-        margin: auto;
-    }
-
-    .btn {
-        background-color: #0B5E91;
-        text-decoration: none;
-        color: white;
-    }
-</style>
     <div class="containerG">
         <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -44,9 +27,7 @@
         <div class="header text-center">
             <h1>Data Guru</h1>
         </div>
-        
             @livewire('search')
-        
         </div>
 @endsection
 @push('scriptBottom')
