@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\EkskulController;
+use App\Http\Controllers\GuruController;
+use App\Models\Ekstrakurikuler;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Post;
 use App\Models\Teacher;
-use App\Models\Ekstrakurikuler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,12 +38,9 @@ Route::get('/posts', function() {
 Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
 Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('detail');
 
-Route::get('/ekstrakurikuler', function() {
-    return view('ekskul', [
-        "title" => "Ekstrakurikuler",
-        "ekskuls" => Ekstrakurikuler::all(),
-    ]);
-})->name('ekskul');
+Route::get('/guru', [GuruController::class, 'index'])->name('guru');
+
+Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
