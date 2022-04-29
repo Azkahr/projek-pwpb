@@ -1,9 +1,10 @@
 @extends('layouts.main')
-@push('cssTop')
-    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-@endpush
 @push('scriptTop')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+@endpush
+@push('cssTop')
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    @livewireStyles
 @endpush
 @include('partials/navbar')
 @section('layout-container')
@@ -48,3 +49,6 @@
         
         </div>
 @endsection
+@push('scriptBottom')
+    @livewireScripts
+@endpush
