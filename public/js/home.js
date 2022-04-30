@@ -1,3 +1,5 @@
+let bg = document.getElementById("paralax");
+
 let svg1 = document.getElementById("svg1");
 let svg2 = document.getElementById("svg2");
 let svg3 = document.getElementById("svg3");
@@ -21,5 +23,11 @@ window.onscroll = function () {
         (document.documentElement.scrollHeight -
             document.documentElement.clientHeight);
     let drawlength = svg1l * scrollpercent;
+
     svg1.style.strokeDashoffset = svg1l - drawlength;
+
+    if (window.pageYOffset < 968) {
+        let i = window.pageYOffset / 2;
+        bg.style.top = `${i}px`;
+    }
 };

@@ -50,8 +50,7 @@
     </div>
 @endsection
 @push('scriptBottom')
-    <script src="{{ asset('js/paralax.js') }}"></script>
-    <script src="{{ asset('js/svg.js') }}"></script>
+    <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
