@@ -1,33 +1,20 @@
-let bg = document.getElementById("paralax");
+window.onload = function () {
+    let bg = document.getElementById("paralax");
+    let rect1 = document.getElementById("rect1");
+    let rect1l = document.getElementById("rect1").getBoundingClientRect();
 
-let svg1 = document.getElementById("svg1");
-let svg2 = document.getElementById("svg2");
-let svg3 = document.getElementById("svg3");
+    let rect2 = document.getElementById("rect2");
+    let rect2l = document.getElementById("rect1").getBoundingClientRect();
 
-let svg1l = svg1.getTotalLength();
-let svg2l = svg2.getTotalLength();
-let svg3l = svg3.getTotalLength();
+    window.onscroll = function () {
+        let scrollpercent1 = (window.pageYOffset / rect2l.y) * 100;
+        let drawlength = (scrollpercent1 / 100) * rect1l.width;
+        rect1.setAttribute("width", `${drawlength}`);
+        console.log(scrollpercent1, drawlength);
 
-svg1.style.strokeDasharray = svg1l + " " + svg1l;
-svg1.style.strokeDashoffset = svg1l;
-
-svg2.style.strokeDasharray = svg2l + " " + svg2l;
-svg2.style.strokeDashoffset = svg2l;
-
-svg3.style.strokeDasharray = svg3l + " " + svg3l;
-svg3.style.strokeDashoffset = svg3l;
-
-window.onscroll = function () {
-    let scrollpercent =
-        (document.documentElement.scrollTop + document.body.scrollTop) /
-        (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight);
-    let drawlength = svg1l * scrollpercent;
-
-    svg1.style.strokeDashoffset = svg1l - drawlength;
-
-    if (window.pageYOffset < 968) {
-        let i = window.pageYOffset / 2;
-        bg.style.top = `${i}px`;
-    }
+        if (window.pageYOffset < 968) {
+            let i = window.pageYOffset / 2;
+            bg.style.top = `${i}px`;
+        }
+    };
 };

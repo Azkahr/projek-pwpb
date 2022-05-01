@@ -19,10 +19,9 @@
     </div>
     <div class="svg-container">
         <div class="bg">
-            <svg viewBox="0 0 1920 2448" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="svg1" d="M1936.27 0.264168L1936.27 92.2971L-12.5 1011.15L-12.4999 909.65L1936.27 0.264168Z" stroke="#104565" stroke-width="100"/>
-                <path id="svg2" d="M-1.68748 902.937L1920.02 2152.07L1920.32 2274.37L-1.37689 1030.64L-1.68748 902.937Z" fill="#0B5E91"/>
-                <path id="svg3" d="M1708.91 2447.59L1647 2369.06L1919.78 2154L1919.78 2269.5L1708.91 2447.59Z" fill="#0084AC"/>
+            <svg viewBox="0 0 1920 2068" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect id="rect1" x="2032.27" y="91.2251" width="2261.62" height="100" transform="rotate(155.325 2032.27 91.2251)" fill="#0B5E91"/>
+                <rect id="rect2" x="-17.5304" y="906" width="2261.62" height="100" transform="rotate(28.3396 -17.5304 906)" fill="#104565"/>
             </svg>
         </div>
     </div>
