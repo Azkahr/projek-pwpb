@@ -12,7 +12,7 @@
         </div>
         <div class="ekskul">
             @foreach ($ekskuls as $ekskul)
-                <div class="ekskul-1">
+                <div class="ekskul-1 mb-3">
                     <h2>{{ $ekskul->nama }}</h2>
                     <img src="{{ Voyager::image($ekskul->image) }}" alt="{{ $ekskul->nama }}.png">
                 </div>

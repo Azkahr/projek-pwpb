@@ -7,5 +7,5 @@
     <a href="#" style="order: 3">Program</a>
     <a href="{{ route('berita') }}" style="order: 5">Berita</a>
     <a href="#" style="order: 6">Kontak</a>
-    <a href="#" style="order: 7">Pengumuman</a>
+    <a href="{{ route('ekskul') }}" style="order: 7">Ekstrakurikuler</a>
 </div>

@@ -22,7 +22,7 @@
                             <td>{{ $teacher->nip }}</td>
                             <td>{{ $teacher->lahir }}</td>
                             <td>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" id="detail-guru" class="btn detail-guru" data-id="{{ $teacher->id }}" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Lihat
                                 </button>
                             </td>
