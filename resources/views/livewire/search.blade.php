@@ -10,7 +10,6 @@
                     <th>Nama</th>
                     <th>NIP</th>
                     <th>Lahir</th>
-                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,11 +20,6 @@
                             <td>{{ $teacher->nama }}</td>
                             <td>{{ $teacher->nip }}</td>
                             <td>{{ $teacher->lahir }}</td>
-                            <td>
-                                <button type="button" id="detail-guru" class="btn detail-guru" data-id="{{ $teacher->id }}" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Lihat
-                                </button>
-                            </td>
                         </tr>
                     @endforeach
                 @else
