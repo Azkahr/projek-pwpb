@@ -8,6 +8,8 @@ window.onload = function () {
 
     let rect3l = document.getElementById("limit1").getBoundingClientRect();
 
+    let scroll = 0;
+
     window.addEventListener("scroll", function () {
         if (window.pageYOffset < 968) {
             let i = window.pageYOffset / 2;
@@ -16,10 +18,26 @@ window.onload = function () {
     });
 
     window.addEventListener("scroll", function () {
-        if (window.pageYOffset + window.innerHeight < rect2l.y) {
-            let scrollpercent1 = (window.pageYOffset / rect2l.y) * 100;
-            let drawlength = (scrollpercent1 / 100) * rect1l.width;
-            rect1.setAttribute("width", `${drawlength}`);
+        /* let scrollpercent1 = (window.pageYOffset / rect2l.y) * 100;
+        let drawlength1 = (scrollpercent1 / 100) * rect1l.width;
+        rect1.setAttribute("width", `${drawlength1}`); */
+
+        if (window.pageYOffset > rect2l.y) {
+            if (scroll <= 0) {
+                scroll = window.pageYOffset;
+            }
+            /* let min = window.pageYOffset - scroll; */
+            console.log(
+                window.pageYOffset,
+                Math.max(0, window.pageYOffset - scroll)
+            );
         }
+
+        /* if (window.pageYOffset > rect2l.y) {
+            let scrollpercent2 = (window.pageYOffset / rect3l.y) * 100;
+            let drawlength2 = (scrollpercent2 / 100) * rect2l.width * 2;
+            rect2.setAttribute("width", `${drawlength2}`);
+            console.log(scrollpercent2, drawlength2);
+        } */
     });
 };
