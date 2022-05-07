@@ -2,12 +2,33 @@
     margin-top: 150px;
 }
 
-.body {
-    margin: auto;
+.input {
+    margin-top: 20px;
 }
 
 .btn {
     background-color: #0b5e91;
     text-decoration: none;
     color: white;
+}
+
+.cardG {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-gap: 30px;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cards-content {
+    padding: 2px 16px;
 }
