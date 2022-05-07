@@ -23,6 +23,7 @@
                 <rect id="rect1" x="2032.27" y="91.2251" width="2261.62" height="100" transform="rotate(155.325 2032.27 91.2251)" fill="#0B5E91"/>
                 <rect id="rect2" x="-17.5304" y="906" width="2261.62" height="100" transform="rotate(28.3396 -17.5304 906)" fill="#104565"/>
             </svg>
+            <div id="limit1"></div>
         </div>
     </div>
     <div class="container-sambutan">
