@@ -1,36 +1,30 @@
 <div>
-    <div class="body col-lg-10">
-        <div class="form-group col-md-3 float-end">
-            <input type="text" wire:model="search" class="form-control" placeholder="Cari Guru" autocomplete="off">
-        </div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nama</th>
-                    <th>NIP</th>
-                    <th>Lahir</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if ($teachers && $teachers->count() > 0)
-                    @foreach ($teachers as $teacher)
-                        <tr>
-                            <th>{{ $loop->iteration }}</th>
-                            <td>{{ $teacher->nama }}</td>
-                            <td>{{ $teacher->nip }}</td>
-                            <td>{{ $teacher->lahir }}</td>
-                        </tr>
-                    @endforeach
+    <div class="form-group col-md-3 float-end" style="margin-right: 20px;">
+        <input type="text" wire:model="search" class="form-control" placeholder="Cari Guru" autocomplete="off">
+    </div>
+    <br>
+    
+    <div class="container">
+        <div class="cardG">
+            @if ($teachers && $teachers->count() > 0)
+                @foreach ($teachers as $teacher)
+                <div class="cards mt-5">
+                @if ($teacher->image)
+                    <img src="{{ asset('storage/' . $teacher->image) }}" alt="Avatar" style="width:100%">
                 @else
-                    <tr>
-                        <td>
-                            <h3 style="text-align: center">Tidak ada hasil</h3>
-                        </td>
-                    </tr>
+                    <img src="{{ asset('img/user.png') }}" alt="avatar" style="width: 100%">
                 @endif
-            </tbody>
-        </table>
+                    <div class="cards-content">
+                        <h4><b>{{ $teacher->nama }}</b></h4> 
+                        <p>{{ $teacher->nip }}</p> 
+                        <p>{{ $teacher->lahir }}</p> 
+                    </div>
+                </div>
+                @endforeach
+            @else
+                
+            @endif
+        </div>
     </div>
 </div>
 

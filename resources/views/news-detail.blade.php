@@ -14,5 +14,6 @@
         <img src="{{ Voyager::image($post->image) }}" width="750" height="450">
         <h1>{{ $post->title }}</h1>
         <p>{!! $post->body !!}</p>
+        <a href="/berita" class="btn">Kembali</a>
     </div>
 @endsection
