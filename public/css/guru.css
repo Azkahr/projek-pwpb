@@ -26,7 +26,15 @@
 }
 
 .cards:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    animation: pulsate 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 15px #25abff;
+        box-shadow: 0 0 30px #0B5E91;
+    }
 }
 
 .cards-content {
