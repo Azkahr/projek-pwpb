@@ -3,10 +3,12 @@
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\PengumumanController;
 use App\Models\Ekstrakurikuler;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Post;
 use App\Models\Teacher;
+use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +33,8 @@ Route::get('/posts', function() {
         "title" => "Posts",
         "posts" => Post::all(),
         "ekskuls" => Ekstrakurikuler::all(),
-        "teachers" => Teacher::all()
+        "teachers" => Teacher::all(),
+        "announcements" => Announcement::all()
     ]);
 });
 
@@ -47,6 +50,10 @@ Route::get('/contact', function() {
         "title" => "Contact"
     ]);
 })->name('contact');
+
+Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman');
+
+Route::get('/pengumuman/{id}', [PengumumanController::class, 'show'])->name('detail-pengumuman');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -63,7 +63,29 @@
                             <tr>
                                 <td>{{ $ekskul->nama }}</td>
                                 <td>
-                                    <img src="{{ Voyager::image($ekskul->image) }}">
+                                    <img src="{{ Voyager::image($ekskul->image) }}" width="50">
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Excerpt</th>
+                            <th>Body</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($announcements as $announce)
+                            <tr>
+                                <td>{{ $announce->title }}</td>
+                                <td>{{ $announce->excerpt }}</td>
+                                <td>{{ $announce->body }}</td>
+                                <td>
+                                    <img src="{{ Voyager::image($announce->image) }}" alt="asd" width="50">
                                 </td>
                             </tr>
                         @endforeach
