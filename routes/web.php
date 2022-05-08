@@ -42,6 +42,12 @@ Route::get('/guru', [GuruController::class, 'index'])->name('guru');
 
 Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
 
+Route::get('/contact', function() {
+    return view('profile.contact', [
+        "title" => "Contact"
+    ]);
+})->name('contact');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
