@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\SejarahController;
 use App\Models\Ekstrakurikuler;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Post;
@@ -53,6 +54,8 @@ Route::prefix('profil')->group(function() {
     Route::get('/guru', [GuruController::class, 'index'])->name('guru');
     
     Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
+
+    Route::get('/tentang&sejarah', [SejarahController::class, 'index'])->name('sejarah');
 });
 
 

@@ -6,6 +6,7 @@
     <div class="dropdown" style="order: 2">
         <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a href="{{ route('sejarah') }}" class="dropdown-item">Tentang & Sejarah</a>
             <a href="{{ route('guru') }}" class="dropdown-item">Guru</a>
             <a href="{{ route('ekskul') }}" class="dropdown-item">Ekstrakurikuler</a>
         </div>
