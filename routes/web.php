@@ -6,11 +6,7 @@ use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\SejarahController;
-use App\Models\Ekstrakurikuler;
 use TCG\Voyager\Facades\Voyager;
-use TCG\Voyager\Models\Post;
-use App\Models\Teacher;
-use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
 /*
