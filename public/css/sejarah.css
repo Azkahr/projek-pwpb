@@ -11,7 +11,7 @@
 
 .tentang {
     width: 750px;
-    height: 250px;
+    height: auto;
     background: #0086D8;
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
     border-radius: 39px;
@@ -44,6 +44,8 @@
     background: #0B5E91;
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
     border-radius: 39px;
+    position: sticky; 
+    top: 100px;
 }
 
 .image-tentang img {
@@ -62,7 +64,7 @@
 
 .sejarah {
     width: 750px;
-    height: 250px;
+    height: auto;
     background: #0086D8;
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
     border-radius: 39px;
@@ -77,6 +79,8 @@
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
     border-radius: 39px;
     grid-row: 1;
+    position: sticky; 
+    top: 100px;
 }
 
 .image-sejarah img {
