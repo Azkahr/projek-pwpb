@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\PengumumanController;
@@ -38,22 +39,22 @@ Route::get('/posts', function() {
     ]);
 });
 
-Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
-Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('detail');
+Route::prefix('info')->group(function() {
+    Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+    Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('detail');
+    
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    
+    Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman');
+    Route::get('/pengumuman/{id}', [PengumumanController::class, 'show'])->name('detail-pengumuman');
+});
 
-Route::get('/guru', [GuruController::class, 'index'])->name('guru');
+Route::prefix('profil')->group(function() {
+    Route::get('/guru', [GuruController::class, 'index'])->name('guru');
+    
+    Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
+});
 
-Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
-
-Route::get('/contact', function() {
-    return view('profile.contact', [
-        "title" => "Contact"
-    ]);
-})->name('contact');
-
-Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman');
-
-Route::get('/pengumuman/{id}', [PengumumanController::class, 'show'])->name('detail-pengumuman');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
