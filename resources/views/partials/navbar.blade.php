@@ -1,6 +1,6 @@
 <div class="navbar">
     <a style="order: 4; width: 5%;" href="/">
-        <img class="img-logo" src="{{ asset('img/logo 41.png') }}" alt="logo smpn 41">
+        <img class="img-logo" src="{{ asset('img/logo-41.png') }}" alt="logo smpn 41">
     </a>
     <a href="/" style="order: 1">Home</a>
     <a href="#" style="order: 2">Profil</a>
