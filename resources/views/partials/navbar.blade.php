@@ -4,9 +4,9 @@
     </a>
     <a href="/" style="order: 1">Home</a>
     <div class="dropdown" style="order: 2">
-        <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+        <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Tentang kami</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a href="{{ route('sejarah') }}" class="dropdown-item">Tentang & Sejarah</a>
+            <a href="{{ route('profil') }}" class="dropdown-item">Profil</a>
             <a href="{{ route('guru') }}" class="dropdown-item">Guru</a>
             <a href="{{ route('ekskul') }}" class="dropdown-item">Ekstrakurikuler</a>
         </div>

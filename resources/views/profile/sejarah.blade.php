@@ -2,6 +2,7 @@
 @push('cssTop')
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sejarah.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endpush
 @include('partials/navbar')
 @section('layout-container')
@@ -24,5 +25,33 @@
                 <img src="{{ asset('img/sekolah.jpeg') }}" alt="sekolah.jpeg" width="300">
             </div>
         </div>
+        <div class="vismis-container">
+            <div class="box1 animasi" data-aos="fade-up" data-aos-duration="1500">
+                <div class="inside">
+                    <div class="box-visi">
+                    <h1>Visi</h1>        
+                </div>
+            </div>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis ad commodi soluta libero pariatur distinctio eaque odio nesciunt necessitatibus sit ullam nostrum a error officiis magni tempore debitis aliquam, harum est consequatur corporis. Sit consequatur aperiam minima tenetur ea itaque! Eius porro vitae corporis, id nemo fuga aliquid tenetur veritatis!</h4>
+            </div>
+            <div class="box2 animasi" data-aos="fade-down" data-aos-duration="1500">
+                <div class="inside-misi">
+                    <div class="box-misi">
+                    <h1>Misi</h1>        
+                </div>
+            </div>
+            <h4>1. Misi pertama mencerdaskan peserta didik</h4>
+            <h4>2. Misi pertama mencerdaskan peserta didik</h4>
+            <h4>3. Misi pertama mencerdaskan peserta didik</h4>
+            <h4>4. Misi pertama mencerdaskan peserta didik</h4>
+            <h4>5. Misi pertama mencerdaskan peserta didik</h4>
+            </div>
+        </div>
     </div>
 @endsection
+@push('scriptBottom')
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+@endpush

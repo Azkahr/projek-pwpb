@@ -37,7 +37,7 @@ Route::prefix('info')->group(function() {
 Route::prefix('profil')->group(function() {
     Route::get('/guru', [GuruController::class, 'index'])->name('guru');
     Route::get('/ekstrakurikuler', [EkskulController::class, 'index'])->name('ekskul');
-    Route::get('/tentang&sejarah', [SejarahController::class, 'index'])->name('sejarah');
+    Route::get('/profil', [SejarahController::class, 'index'])->name('profil');
 });
 
 Route::group(['prefix' => 'admin'], function () {
