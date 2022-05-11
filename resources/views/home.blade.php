@@ -59,6 +59,12 @@
         </div>
     </div>
     <div class="container-visi-misi">
+        <img src="{{ asset('img/visi-misi.png') }}" alt="visi-misi">
+    </div>
+    <div class="container-data-singkat">
+        <img width="100%" height="100%" style="object-fit: contain; image-rendering:optimizeQuality" src="{{ asset('img/data-singkat.png') }}" alt="data-singkat">
+    </div>
+    {{-- <div class="container-visi-misi">
         <div class="line1">
             <div style="width:55%">
                 <svg viewBox="0 0 1052 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,17 +74,26 @@
             <img src="{{ asset('img/visi-header.png') }}" alt="visi">
             <img src="{{ asset('img/misi-header.png') }}" alt="misi">
         </div>
-        <div>
-            
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slider-content">
+                    <img class="visi-misi-icon" src="{{ asset('img/visi-header.png') }}" alt="visi-logo">
+                    <br>
+                    <img class="apresiatif-icon" src="{{ asset('img/apresiatif-icon.png') }}" alt="apresiatif icon">
+                    <p>Apresiatif</p>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="line2">
+            <div style="width:55%; justify-self:flex-end">
+                <svg viewBox="0 0 1207 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666667 14C0.666666 21.3638 6.6362 27.3333 14 27.3333C21.3638 27.3333 27.3333 21.3638 27.3333 14C27.3333 6.6362 21.3638 0.666668 14 0.666667C6.6362 0.666666 0.666668 6.6362 0.666667 14ZM14 16.5L1207 16.5001L1207 11.5001L14 11.5L14 16.5Z" fill="#104565"/>
+                </svg>
+            </div>
+        </div>
+    </div> --}}
 @endsection
 @push('scriptBottom')
-    <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
+    <script src="{{ asset('js/home.js') }}"></script>
 @endpush

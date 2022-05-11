@@ -7,3 +7,7 @@ window.onload = function () {
         }
     });
 };
+
+AOS.init({
+    once: true,
+});
