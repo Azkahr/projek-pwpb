@@ -1,0 +1,224 @@
+.containerS {
+    margin-top: 150px;
+}
+
+.tentang-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 90px;
+}
+
+.tentang {
+    width: 750px;
+    height: auto;
+    background: #0086D8;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+}
+
+.tentang h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.tentang p {
+    width: 90%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.image-tentang {
+    width: 350px;
+    height: 250px;
+    background: #0B5E91;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    position: sticky; 
+    top: 100px;
+}
+
+.image-tentang img {
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.sejarah-container {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-right: 109px;
+    grid-column-start: 2;
+    margin-bottom: 50px;
+}
+
+.sejarah {
+    width: 750px;
+    height: auto;
+    background: #0086D8;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    grid-column: -2;
+}
+
+.image-sejarah {
+    width: 350px;
+    height: 250px;
+    margin-left: 92px;
+    background: #0B5E91;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    grid-row: 1;
+    position: sticky; 
+    top: 100px;
+}
+
+.image-sejarah img {
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.sejarah h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.sejarah p {
+    width: 90%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+/* visi misi css */
+.vismis-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 80px;
+}
+
+.box1 {
+    width: 350px;
+    height: auto;
+    margin-left: 92px;
+    background: #003D62;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.box1 h4 {
+    width: 250px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.inside {
+    width:350px;
+    height:100px;
+    background: #0B5E91;
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.box-visi {
+    width: 100px;
+    height: 50px;
+    background: #0084D5;
+    margin: 0 auto;
+}
+
+.inside h1 {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.box2 {
+    width: 350px;
+    height: auto;
+    margin-left: 92px;
+    background: #003D62;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.box2 h4 {
+    width: 250px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.inside-misi {
+    width:350px;
+    height:100px;
+    background: #0B5E91;
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.box-misi {
+    width: 100px;
+    height: 50px;
+    background: #0084D5;
+    margin: 0 auto;
+}
+
+.inside-misi h1 {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.animasi {
+    transition: transform 0.3s;
+}
+
+.animasi:hover {
+    animation: pulsate 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 40px #25abff;
+        box-shadow: 0 0 70px #0B5E91;
+    }
+}
