@@ -180,4 +180,21 @@
         margin-inline: auto;
         background-color: #104565;
     }
+
+    .container-visi-misi {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .container-visi-misi .line1 {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        width: 100%;
+    }
+
+    .container-visi-misi img {
+        width: 10%;
+        height: auto;
+    }
 }

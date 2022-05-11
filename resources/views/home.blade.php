@@ -58,6 +58,20 @@
             </div>
         </div>
     </div>
+    <div class="container-visi-misi">
+        <div class="line1">
+            <div style="width:55%">
+                <svg viewBox="0 0 1052 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1051.33 14C1051.33 6.6362 1045.36 0.666668 1038 0.666667C1030.64 0.666666 1024.67 6.6362 1024.67 14C1024.67 21.3638 1030.64 27.3333 1038 27.3333C1045.36 27.3333 1051.33 21.3638 1051.33 14ZM1038 11.5L2.18557e-07 11.4999L-2.18557e-07 16.4999L1038 16.5L1038 11.5Z" fill="#104565"/>
+                </svg>
+            </div>
+            <img src="{{ asset('img/visi-header.png') }}" alt="visi">
+            <img src="{{ asset('img/misi-header.png') }}" alt="misi">
+        </div>
+        <div>
+            
+        </div>
+    </div>
 @endsection
 @push('scriptBottom')
     <script src="{{ asset('js/home.js') }}"></script>
