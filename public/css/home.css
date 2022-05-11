@@ -264,4 +264,21 @@
         margin-right: auto;
         margin-top: 20px;
     } */
+
+    .berita-wrapper {
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+
+    .berita-wrapper h1 {
+        color: #0b5e91;
+        padding-top: 20px;
+    }
+    
+    .berita {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
 }

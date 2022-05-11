@@ -8,6 +8,7 @@ use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\SejarahController;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home",
+        "news" => Post::latest()->take(3)->get()
     ]);
 });
 

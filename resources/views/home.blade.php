@@ -92,6 +92,20 @@
             </div>
         </div>
     </div> --}}
+    <div class="berita-wrapper">
+        <h1 class="text-center">Berita terkini</h1>
+        <div class="berita text-center">
+            @foreach ($news as $new)
+                <div class="berita-terkini">
+                    <a href="{{ route('detail', $new->id) }}">
+                        <img src="{{ Voyager::image($new->image) }}" alt="" width="300">
+                        <h3>{{ $new->title }}</h3>
+                        <p>{{ $new->excerpt }}</p>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
 @push('scriptBottom')
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
