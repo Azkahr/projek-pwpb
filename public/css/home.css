@@ -129,9 +129,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        column-gap: 15px;
         width: 100%;
-        padding: 30px;
         height: 500px;
         background-color: #0b5e91;
     }
@@ -143,10 +141,11 @@
         background-image: url("../img/bg-shape.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 50% calc(50% + 5px);
     }
 
     .container-sejarah .iframe {
+        margin: 30px;
         padding: 2px;
         border: 5px white dashed;
     }
@@ -159,13 +158,13 @@
     .container-sejarah .text > p:first-child {
         text-align: center;
         font-weight: 700;
-        font-size: 1.6vw;
+        font-size: 1.7vw;
         margin-bottom: -5px;
     }
 
     .container-sejarah .text > p:nth-child(2) {
         text-align: center;
-        font-size: 1.2vw;
+        font-size: 1.3vw;
     }
 
     .container-sejarah .text .content {
@@ -175,7 +174,7 @@
         width: 90%;
         height: 80%;
         padding: 30px;
-        font-size: 2.5vh;
+        font-size: 18.6px;
         font-weight: 600;
         text-align: justify;
         margin-inline: auto;
