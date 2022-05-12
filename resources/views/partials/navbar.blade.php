@@ -11,7 +11,7 @@
             <a href="{{ route('ekskul') }}" class="dropdown-item">Ekstrakurikuler</a>
         </div>
     </div>
-    <a href="#" style="order: 3">Program</a>
+    <a href="{{ route('program') }}" style="order: 3">Program</a>
     <a href="{{ route('berita') }}" style="order: 5">Berita</a>
     <a href="{{ route('contact') }}" style="order: 6">Kontak</a>
     <a href="{{ route('pengumuman') }}" style="order: 7">Pengumuman</a>

@@ -1,14 +1,15 @@
 <?php
 
-use App\Http\Controllers\BeritaController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\EkskulController;
-use App\Http\Controllers\GuruController;
-use App\Http\Controllers\PengumumanController;
-use App\Http\Controllers\SejarahController;
+use TCG\Voyager\Models\Post;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
-use TCG\Voyager\Models\Post;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\EkskulController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\SejarahController;
+use App\Http\Controllers\PengumumanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,7 @@ Route::prefix('info')->group(function() {
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
     Route::get('/pengumuman', [PengumumanController::class, 'index'])->name('pengumuman');
     Route::get('/pengumuman/{id}', [PengumumanController::class, 'show'])->name('detail-pengumuman');
+    Route::get('/program', [ProgramController::class, 'index'])->name('program');
 });
 
 Route::prefix('profil')->group(function() {

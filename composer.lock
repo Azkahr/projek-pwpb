@@ -5504,12 +5504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/the-control-group/voyager.git",
-                "reference": "10fe579d57f1b09d64c9dd6e7f8e0bb2e801d58d"
+                "reference": "b384421603b579eff21d5cd7c25f375bccc93a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/10fe579d57f1b09d64c9dd6e7f8e0bb2e801d58d",
-                "reference": "10fe579d57f1b09d64c9dd6e7f8e0bb2e801d58d",
+                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/b384421603b579eff21d5cd7c25f375bccc93a0a",
+                "reference": "b384421603b579eff21d5cd7c25f375bccc93a0a",
                 "shasum": ""
             },
             "require": {
@@ -5588,7 +5588,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-23T15:37:03+00:00"
+            "time": "2022-05-04T07:20:57+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
