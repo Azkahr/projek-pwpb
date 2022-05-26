@@ -25,7 +25,7 @@
                 </div>
                 <div class="text">
                     <p style="text-align: justify">
-                        {{ $component_sambutan->value }}
+                        {{ $components['component_sambutan']->value }}
                     </p>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <p>SMPN 41 Bandung</p>
             <div class="content">
                 <p>
-                    {{ $component_sejarah_singkat->value }}
+                    {{ $components["component_sejarah_singkat"]->value }}
                 </p>
             </div>
         </div>
