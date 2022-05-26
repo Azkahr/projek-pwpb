@@ -3,6 +3,7 @@
 use TCG\Voyager\Models\Post;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
+use App\Models\Component;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\EkskulController;
@@ -25,7 +26,11 @@ use App\Http\Controllers\PengumumanController;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home",
-        "news" => Post::latest()->take(3)->get()
+        "news" => Post::latest()->take(3)->get(),
+        'components' => [
+            'component_sambutan' => Component::where('page', 'homepage')->where('name', 'sambutan-kepsek')->first(['value']),
+            'component_sejarah_singkat' => Component::where('page', 'homepage')->where('name', 'sejarah-singkat')->first(['value']),
+        ]
     ]);
 });
 

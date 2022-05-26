@@ -25,14 +25,7 @@
                 </div>
                 <div class="text">
                     <p style="text-align: justify">
-                        Alhamdulillahirobbilalamin puji serta syukur kami 
-                        panjatkan kehadirat Allah SWT, karena atas berkat 
-                        limpahan rahmat dan karunia serta hidayah, website 
-                        terbaru dari SMPN 41 Bandung dapat diakses untuk 
-                        memudahkan informasi serta pembelajaran dari sekolah 
-                        kedepannya. Website salah satu media informasi yang 
-                        juga mendukungnya dan salah satu penopang content creatif 
-                        sekolah sebagai sekolah pusat keunggulan.
+                        {{ $component_sambutan->value }}
                     </p>
                 </div>
             </div>
@@ -48,12 +41,7 @@
             <p>SMPN 41 Bandung</p>
             <div class="content">
                 <p>
-                    SMP Negeri 41 Bandung merupakan sekolah menengah pertama negeri 
-                    yang berada di Kota Bandung, Jawa Barat, Indonesia. Berlokasi di 
-                    Jalan Arjuna No.18, Ciroyom, Kec. Andir, Kota Bandung, Jawa Barat. 
-                    Masa pendidikan di SMP Negeri 41 Bandung ditempuh dalam waktu tiga 
-                    tahun pelajaran, mulai dari kelas VII hingga kelas IX, seperti pada 
-                    umumnya masa pendidikan sekolah menengah pertama di Indonesia.
+                    {{ $component_sejarah_singkat->value }}
                 </p>
             </div>
         </div>
