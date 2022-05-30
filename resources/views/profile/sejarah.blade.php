@@ -32,7 +32,7 @@
                     <h1>Visi</h1>        
                 </div>
             </div>
-            <h4>Mengantarkan peserta didik ke gerbang ARJUNA, Apresiatif,Religius, Juara,Aman dan menyenangkan</h4>
+            <h4>{!! $components["visi"]->value !!}</h4>
             </div>
             <div class="box2 animasi" data-aos="fade-down" data-aos-duration="1500">
                 <div class="inside-misi">
@@ -40,13 +40,7 @@
                     <h1>Misi</h1>        
                 </div>
             </div>
-            <h4>1. Mengembangkan kurikulum sekolah yang meliputi pemetaan SK,KD,indikator pengembangan, silabus dan RPP untuk kelas VII,VIII dan IX semua mata pelajaran</h4>
-            <h4>2. Melaksanakan pembelajaran yang aktif,inovatif,kreatif, efektif dan menyenangkan dengan pendekatan PAIKEM</h4>
-            <h4>3. Melaksanakan kegiatan tambahan jam pelajaran bagi siswa kelas IX</h4>
-            <h4>4. Meningkatkan fropesionalisme guru,melalui pendidikan,pelatihan dan workshop</h4>
-            <h4>5. Mengembangkan sarana dan prasarana sesuai SNP</h4>
-            <h4>6. Melaksanakan manajemen sekolah yang partisipatif dan akuntabel</h4>
-            <h4>7. Mendorong partisipasi orang tua melalui paguyuban kelas</h4>
+            <h4 class="mt-2">{!! $components["misi"]->value !!}</h4>
             </div>
         </div>
     </div>
